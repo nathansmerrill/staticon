@@ -15,7 +15,6 @@ colors = {
     Level.WARNING: '\033[93m',
     Level.ERROR: '\033[91m',
     Level.CRITICAL: '\033[31m',
-    Level.PEPEGA: '\033[32m'
 }
 
 icons = {
