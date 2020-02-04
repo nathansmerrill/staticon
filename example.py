@@ -1,7 +1,7 @@
-from sticons import sprint
+from sticons import sprint, Level
 
-sprint('info', 'This is info')
-sprint('success', 'This is success')
-sprint('warning', 'This is warning')
-sprint('error', 'This is error')
-sprint('critical', 'This is critical')
+sprint(Level.INFO, 'This is info')
+sprint(Level.SUCCESS, 'This is success')
+sprint(Level.WARNING, 'This is warning')
+sprint(Level.ERROR, 'This is error')
+sprint(Level.CRITICAL, 'This is critical')
