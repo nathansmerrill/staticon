@@ -1,4 +1,4 @@
-from sticons import sprint, Level
+from staticon import sprint, Level
 
 sprint(Level.INFO, 'This is info')
 sprint(Level.SUCCESS, 'This is success')
