@@ -3,7 +3,7 @@ A python library for printing pretty status messages
 ## Installation
 `pip install --user staticon`
 ## Usage
-`message` returns the text to print
+`message` returns the text to print  
 `sprint` calls `message` and prints the output
 ```python
 from staticon import Level, sprint
