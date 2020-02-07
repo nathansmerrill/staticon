@@ -26,7 +26,13 @@ icons = {
 }
 
 def message(level, text):
-    return f'[{colors[level]}{icons[level]}{colors[Level.RESET]}] {text}'
+    out = '['
+    out += colors[level]
+    out += icons[level]
+    out += colors[Level.RESET]
+    out += '] '
+    out += text
+    return out
 
 def sprint(level, text):
     print(message(level, text))
