@@ -1,3 +1,4 @@
+from datetime import datetime
 from enum import Enum
 
 class Level(Enum):
@@ -25,14 +26,17 @@ icons = {
     Level.CRITICAL: '\u26A0',
 }
 
-def message(level, text):
+def message(level, text, timestamp=False):
     out = '['
     out += colors[level]
     out += icons[level]
+    if timestamp:
+        out += ' '
+        out += datetime.now().strftime("%d-%b-%Y %-I:%M:%S %p")
     out += colors[Level.RESET]
     out += '] '
     out += text
     return out
 
-def sprint(level, text):
-    print(message(level, text))
+def sprint(level, text, timestamp=False):
+    print(message(level, text, timestamp))
