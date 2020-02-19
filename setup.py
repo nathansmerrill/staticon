@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="staticon", # Replace with your own username
-    version="0.0.5",
+    name="staticon",
+    version="0.0.6",
     author="Nathan Merrill",
     author_email="mathiscool3000@gmail.com",
     description="A python library for printing pretty status messages",
